@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Versatile-Media</b></h1>
+  <h1><b>Catalog-Ruby-Group-Capstone</b></h1>
 
 </div>
 
@@ -30,7 +30,7 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Versatile-Media-Ruby <a id="about-project"></a>
+# 📖 Catalog-Ruby-Group-Capstone <a id="about-project"></a>
 
 - Ruby app for storing favourite Books, Music Albums or Games.
 
@@ -85,7 +85,7 @@ In order to run this project you need: any web-browser.
 
 ### Setup
 
-Clone this [repository](https://github.com/Lucash2022/Versatile-Media-Ruby) to your desired folder.
+Clone this [repository](https://github.com/Lucash2022/Catalog-Ruby-Group-Capstone) to your desired folder.
 
 ### Install
 
@@ -95,7 +95,7 @@ This project does not require installation.
 
 **To run the project follow the following instruction:-**
 
-- Clone this [repository](https://github.com/Lcuash2022/Versatile-Media-Ruby) in your local machine with correct branch.
+- Clone this [repository](https://github.com/Lucash2022/Catalog-Ruby-Group-Capstone) in your local machine with correct branch.
 - Run **ruby main.rb**
 
 ### Run tests
@@ -115,9 +115,17 @@ To run tests, run the following command: **rspec**.
 - LinkedIn: [Lucas Erkana](https://www.linkedin.com/in/lucas-erkana/)
 
 
-👤 **Partner 1**
+👤 **Kagheni Mbale Christian**
 
-👤 **Partner 2**
+- GitHub: [@githubhandle](https://github.com/Kaghenimbale)
+- Twitter: [@twitterhandle](https://twitter.com/MbaleKagheni)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kagheni-mbale-401b90240/)
+
+👤 **Ghulam Hyder Dar**
+
+- GitHub: [@codeWithHyder](https://github.com/codeWithHyder)
+- Twitter: [@Hyder](https://twitter.com/@hyder3512)
+- LinkedIn: [@Hyder](https://www.linkedin.com/in/ghulam-hyder-dar/)
 
 
 
