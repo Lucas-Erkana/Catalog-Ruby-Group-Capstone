@@ -171,9 +171,9 @@ I would like to thank Microverse.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Can I use this project?]**
+- **Can I use this project?**
 
-  - [It's MIT license, feel free to use as you like.]
+  - It's MIT license, feel free to use as you like.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
