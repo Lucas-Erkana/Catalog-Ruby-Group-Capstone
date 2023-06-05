@@ -26,7 +26,6 @@ class Item
     @archived = can_be_archived?
   end
 
-
   private
 
   def can_be_archived?
