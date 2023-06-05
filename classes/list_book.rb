@@ -46,5 +46,4 @@ class ListBook
       puts "Publish date: #{book['publish_date']}, Publisher: #{book['publisher']}, Cover state: #{book['cover_state']}"
     end
   end
-
 end
