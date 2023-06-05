@@ -2,7 +2,6 @@ class Item
   attr_reader :id, :genre, :author, :source, :label
   attr_accessor :publish_date
 
-
   def initialize(publish_date)
     @id = Random.rand(1..1000)
     @publish_date = publish_date
@@ -29,7 +28,6 @@ class Item
 
 
   private
-
 
   def can_be_archived?
     current_time = Time.now.year
