@@ -1,4 +1,18 @@
+-- code below added by team member #2
+CREATE TABLE Genre (
+  id SERIAL NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
+);
 
+
+CREATE TABLE MusicAlbum (
+  id SERIAL NOT NULL,
+  on_spotify BOOLEAN NOT NULL,
+  genre_id INT NULL,
+  FOREIGN KEY (genre_id) REFERENCES Genre (id),
+  PRIMARY KEY (id)
+);
 -- Add code above
 -- Code below done by Team member #1
 CREATE TABLE item (
