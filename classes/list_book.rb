@@ -4,9 +4,6 @@ require 'json'
 require 'date'
 require 'fileutils'
 
-# Rest of the code...
-
-
 class ListBook
   attr_accessor :books, :labels
 
@@ -20,12 +17,13 @@ class ListBook
     title = gets.chomp
     puts 'Enter the color of the book: '
     color = gets.chomp
-    puts 'Enter the publish date of the book(Year-MM-DD): '
+    puts 'Enter the publish date of the book (Year-MM-DD): '
     publish_date = gets.chomp
     puts 'Enter the publisher of the book: '
     publisher = gets.chomp
-    puts 'Enter the cover state of the book: '
-    cover_state = gets.chomp
+
+    cover_state = prompt_cover_state
+
     book = Book.new(publish_date, publisher, cover_state)
     label = Label.new(title, color)
     @books.push(book)
@@ -33,6 +31,16 @@ class ListBook
     puts 'Book added'
     store_book(book)
     store_label(label)
+  end
+
+  def prompt_cover_state
+    loop do
+      puts 'Enter the cover state of the book (GOOD or BAD): '
+      cover_state = gets.chomp.upcase
+      return cover_state if %w[GOOD BAD].include?(cover_state)
+
+      puts 'Invalid cover state. Please enter either GOOD or BAD.'
+    end
   end
 
   def store_book(book)
