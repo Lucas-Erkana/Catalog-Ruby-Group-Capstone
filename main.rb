@@ -2,7 +2,7 @@ require_relative 'app'
 
 class Main
   puts 'Welcome to our catalog app'
-  def select_option
+  def select_menu
     puts 'Please choose an option by entering a number:'
     puts '1). List all books'
     puts '2). List all music albums'
@@ -19,7 +19,7 @@ class Main
   def start
     new_app = App.new
     loop do
-      select_option
+      select_menu
       option = gets.chomp
       if option == '10'
         puts 'Thank you for using this app '
