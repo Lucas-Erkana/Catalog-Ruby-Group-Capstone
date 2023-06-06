@@ -2,10 +2,8 @@ require 'json'
 require_relative 'game'
 require_relative 'author'
 
-
 class GameList
   attr_accessor :authors, :games
-
 
   def initialize
     @games = []
@@ -14,13 +12,11 @@ class GameList
     recover_author
   end
 
-
   def list_all_authors
     puts 'No author added' if @authors.empty?
     @authors.each { |author| puts "First name: #{author.first_name}, Last name: #{author.last_name}" }
     puts ''
   end
-
 
   def list_all_games
     puts 'No author added' if @authors.empty?
@@ -29,7 +25,6 @@ class GameList
     end
     puts ''
   end
-
 
   # last_played_at, multiplayer, publish_date,
   def add_game
@@ -40,11 +35,9 @@ class GameList
     print 'Publish date(Year-MM-DD): '
     publish_date = gets.chomp
 
-
     games_added = Game.new(last_played_at, multiplayer, publish_date)
     @games << games_added
     puts ''
-
 
     print 'Add first name: '
     first_name = gets.chomp
@@ -55,7 +48,6 @@ class GameList
     save_author
   end
 
-
   def save_game
     mapped_game = @games.map do |game|
       { id: game.id, last_played_at: game.last_played_at, multiplayer: game.multiplayer,
@@ -64,10 +56,8 @@ class GameList
     File.write('store/games.json', JSON.pretty_generate(mapped_game))
   end
 
-
   def recover_game
     return unless File.exist?('store/games.json')
-
 
     game_store = begin
       JSON.parse(File.read('store/games.json'))
@@ -78,16 +68,13 @@ class GameList
     @games.concat(game_store) unless game_store.empty?
   end
 
-
   def save_author
     authors = @authors.map { |author| { first_name: author.first_name, last_name: author.last_name } }
     File.write('store/authors.json', JSON.pretty_generate(authors))
   end
 
-
   def recover_author
     return unless File.exist?('store/authors.json')
-
 
     author_store = begin
       JSON.parse(File.read('store/authors.json'))
