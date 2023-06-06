@@ -1,4 +1,5 @@
 require_relative './item'
+require 'date'
 
 class Game < Item
   def initialize(publish_date, multiplayer, last_played_at)
@@ -8,6 +9,6 @@ class Game < Item
   end
 
   def can_be_archived?()
-    super && Time.now.year - Date.parse(@last_played).year > 2
+    super || Date.today > Date.iso8601(@last_played_at).next_year(2)
   end
 end
