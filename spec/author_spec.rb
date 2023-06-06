@@ -7,11 +7,9 @@ describe Author do
     @author = Author.new('William', 'Shakner')
   end
 
-
   it 'Should return the correct value for the first_name attribute' do
     expect(@author.first_name).to eq('William')
   end
-
 
   it 'Should return the correct value for the last_name attribute' do
     expect(@author.last_name).to eq('Shakner')
