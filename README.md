@@ -135,10 +135,16 @@ To run tests, run the following command: **rspec**.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **add genre to selected book**
+- [ ] **add movies**
+- [ ] **add genre to selected movie**
+- [ ] **Remove movies**
 - [ ] **Remove a selected book**
 - [ ] **Remove a selected music album**
 - [ ] **Remove a selected game**
 
+remove a selected book
+add genre to selected book
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
