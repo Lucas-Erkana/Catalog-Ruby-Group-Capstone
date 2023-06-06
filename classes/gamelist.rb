@@ -26,13 +26,11 @@ class GameList
     puts ''
   end
 
-  # last_played_at, multiplayer, publish_date,
   def add_game
     print 'Last played at (Year-MM-DD): '
     last_played_at = gets.chomp
-    print 'Multiplayer (state the number): '
-    multiplayer = gets.chomp
-    print 'Publish date(Year-MM-DD): '
+    multiplayer = prompt_multiplayer
+    print 'Publish date (Year-MM-DD): '
     publish_date = gets.chomp
 
     games_added = Game.new(last_played_at, multiplayer, publish_date)
@@ -41,11 +39,22 @@ class GameList
 
     print 'Add first name: '
     first_name = gets.chomp
-    print 'Add last name : '
+    print 'Add last name: '
     last_name = gets.chomp
-    @authors << Author.new(first_name, last_name)
+    authors_added = Author.new(first_name, last_name)
+    @authors << authors_added
     save_game
     save_author
+  end
+
+  def prompt_multiplayer
+    loop do
+      puts 'Enter the multiplayer status (0 for No, 1 for Yes): '
+      multiplayer = gets.chomp
+      return multiplayer if multiplayer == '0' || multiplayer == '1'
+
+      puts 'Invalid multiplayer status. Please enter either 0 or 1.'
+    end
   end
 
   def save_game
