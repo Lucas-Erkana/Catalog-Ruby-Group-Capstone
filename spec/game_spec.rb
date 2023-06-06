@@ -1,5 +1,6 @@
 require_relative '../classes/game'
 require_relative '../classes/item'
+require 'date'
 
 describe Game do
   before(:each) do
