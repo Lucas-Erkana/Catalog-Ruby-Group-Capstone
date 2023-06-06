@@ -9,7 +9,7 @@ describe Game do
   context 'When last played is greater than 2 years' do
     it 'should be able to be archived' do
       can_be_archived = @game.send(:can_be_archived?)
-      expect(can_be_archived).to be false
+      expect(can_be_archived).to be true
     end
   end
 end
