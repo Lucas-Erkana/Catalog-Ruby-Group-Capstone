@@ -1,6 +1,5 @@
 require_relative '../classes/genre'
 
-
 describe Genre do
   it 'Should create an instance of the Genre class' do
     genre = Genre.new('Fictional')
