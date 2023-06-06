@@ -51,7 +51,7 @@ class GameList
     loop do
       puts 'Enter the multiplayer status (0 for No, 1 for Yes): '
       multiplayer = gets.chomp
-      return multiplayer if multiplayer == '0' || multiplayer == '1'
+      return multiplayer if %w[0 1].include?(multiplayer)
 
       puts 'Invalid multiplayer status. Please enter either 0 or 1.'
     end
