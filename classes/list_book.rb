@@ -42,7 +42,7 @@ class ListBook
       publish_date: book.publish_date,
       cover_state: book.cover_state
     }
-  
+
     stored_book = File.empty?('store/books.json') ? [] : JSON.parse(File.read('store/books.json'))
     stored_book << obj
     File.write('store/books.json', stored_book.to_json)
@@ -51,14 +51,14 @@ class ListBook
     FileUtils.mkdir_p('store')
     File.write('store/books.json', [obj].to_json)
   end
-  
+
   def store_label(label)
     obj = {
       id: label.id,
       title: label.title,
       color: label.color
     }
-  
+
     stored_label = File.empty?('store/labels.json') ? [] : JSON.parse(File.read('store/labels.json'))
     stored_label << obj
     File.write('store/labels.json', stored_label.to_json)
