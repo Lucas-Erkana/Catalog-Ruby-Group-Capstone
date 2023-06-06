@@ -1,10 +1,8 @@
 require_relative 'item'
 require_relative 'genre'
 
-
 class MusicAlbum < Item
   attr_reader :on_spotify, :publish_date
-
 
   def initialize(on_spotify, publish_date)
     super(publish_date)
