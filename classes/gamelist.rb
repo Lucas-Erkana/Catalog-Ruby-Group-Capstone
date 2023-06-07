@@ -19,7 +19,7 @@ class GameList
   end
 
   def list_all_games
-    puts 'No author added' if @authors.empty?
+    puts 'No game added' if @authors.empty?
     @games.each do |game|
       puts "Last played: #{game.last_played_at}, Multiplayer: #{game.multiplayer}, Publish date: #{game.publish_date}"
     end
