@@ -1,7 +1,12 @@
 [
   {
-    "id": 79,
+    "id": 588,
     "publish_date": "2000-01-01",
+    "on_spotify": true
+  },
+  {
+    "id": 551,
+    "publish_date": "2022-06-05",
     "on_spotify": true
   }
 ]
