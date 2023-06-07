@@ -1,13 +1,13 @@
-# require_relative './classes/music_album'
-# require_relative './classes/genre'
-# require_relative './classes/music_list'
+require_relative './classes/music_album'
+require_relative './classes/genre'
+require_relative './classes/list_music_albums'
 require_relative './classes/list_book'
 require_relative './classes/gamelist'
 # require_relative './classes/save'
 
 class App
   def initialize
-    # @music = MusicList.new
+    @music = MusicList.new
     @list_book = ListBook.new
     @game = GameList.new
   end
