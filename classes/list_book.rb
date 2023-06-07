@@ -1,11 +1,15 @@
 require_relative 'book'
+require_relative 'label'
 require 'json'
+require 'date'
+require 'fileutils'
 
 class ListBook
-  attr_accessor :books
+  attr_accessor :books, :labels
 
   def initialize
     @books = []
+    @labels = []
   end
 
   def add_book
@@ -13,18 +17,30 @@ class ListBook
     title = gets.chomp
     puts 'Enter the color of the book: '
     color = gets.chomp
-    puts 'Enter the publish date of the book(Year-MM-DD): '
+    puts 'Enter the publish date of the book (Year-MM-DD): '
     publish_date = gets.chomp
     puts 'Enter the publisher of the book: '
     publisher = gets.chomp
-    puts 'Enter the cover state of the book: '
-    cover_state = gets.chomp
+
+    cover_state = prompt_cover_state
+
     book = Book.new(publish_date, publisher, cover_state)
     label = Label.new(title, color)
     @books.push(book)
     @labels.push(label)
     puts 'Book added'
     store_book(book)
+    store_label(label)
+  end
+
+  def prompt_cover_state
+    loop do
+      puts 'Enter the cover state of the book (GOOD or BAD): '
+      cover_state = gets.chomp.upcase
+      return cover_state if %w[GOOD BAD].include?(cover_state)
+
+      puts 'Invalid cover state. Please enter either GOOD or BAD.'
+    end
   end
 
   def store_book(book)
@@ -38,12 +54,39 @@ class ListBook
     stored_book = File.empty?('store/books.json') ? [] : JSON.parse(File.read('store/books.json'))
     stored_book << obj
     File.write('store/books.json', stored_book.to_json)
+  rescue Errno::ENOENT
+    # Create the directory and file if they don't exist
+    FileUtils.mkdir_p('store')
+    File.write('store/books.json', [obj].to_json)
+  end
+
+  def store_label(label)
+    obj = {
+      id: label.id,
+      title: label.title,
+      color: label.color
+    }
+
+    stored_label = File.empty?('store/labels.json') ? [] : JSON.parse(File.read('store/labels.json'))
+    stored_label << obj
+    File.write('store/labels.json', stored_label.to_json)
+  rescue Errno::ENOENT
+    # Create the directory and file if they don't exist
+    FileUtils.mkdir_p('store')
+    File.write('store/labels.json', [obj].to_json)
   end
 
   def list_all_books
     @books = File.empty?('store/books.json') ? [] : JSON.parse(File.read('store/books.json'))
     @books.each do |book|
       puts "Publish date: #{book['publish_date']}, Publisher: #{book['publisher']}, Cover state: #{book['cover_state']}"
+    end
+  end
+
+  def list_all_labels
+    @labels = File.empty?('store/labels.json') ? [] : JSON.parse(File.read('store/labels.json'))
+    @labels.each do |label|
+      puts "Title: #{label['title']}, Color: #{label['color']}"
     end
   end
 end
