@@ -36,7 +36,7 @@ class MusicList
     puts 'Album created successfully'
     puts ''
 
-    print 'Add genre (Comedy, Thriller, Action, Romance): '
+    print 'Add genre (Pop, Rock, HipHop): '
     name = gets.chomp
     @genres << Genre.new(name)
     puts "#{name} genre created successfully"
