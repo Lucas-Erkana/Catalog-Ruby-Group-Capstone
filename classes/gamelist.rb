@@ -78,9 +78,16 @@ class GameList
   end
 
   def save_author
-    authors = @authors.map { |author| { first_name: author.first_name, last_name: author.last_name } }
+    authors = @authors.map do |author|
+      {
+        id: author.id,
+        first_name: author.first_name,
+        last_name: author.last_name
+      }
+    end
     File.write('store/authors.json', JSON.pretty_generate(authors))
   end
+  
 
   def recover_author
     return unless File.exist?('store/authors.json')
