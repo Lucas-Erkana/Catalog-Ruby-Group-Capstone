@@ -2,7 +2,7 @@ require_relative './classes/music_album'
 require_relative './classes/genre'
 require_relative './classes/list_music'
 require_relative './classes/list_book'
-require_relative './classes/gamelist'
+require_relative './classes/list_game'
 
 class App
   def initialize

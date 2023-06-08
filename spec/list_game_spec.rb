@@ -1,4 +1,4 @@
-require_relative '../classes/gamelist'
+require_relative '../classes/list_game'
 require 'rspec'
 
 describe GameList do
