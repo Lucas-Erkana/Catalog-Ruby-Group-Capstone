@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Versatile-Media</b></h1>
+  <h1><b>Catalog-Ruby-Group-Capstone</b></h1>
 
 </div>
 
@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Video Presentation ](#video-project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -30,7 +31,7 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 Versatile-Media-Ruby <a id="about-project"></a>
+# 📖 Catalog-Ruby-Group-Capstone <a id="about-project"></a>
 
 - Ruby app for storing favourite Books, Music Albums or Games.
 
@@ -73,6 +74,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## 🚀 Video Project Presentation <a name="video-project-presentation"></a>
+
+- <a href="https://youtu.be/FK86Ww13c_Y" target="_blank">Video Project Presentation Link</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -85,7 +93,7 @@ In order to run this project you need: any web-browser.
 
 ### Setup
 
-Clone this [repository](https://github.com/Lucash2022/Versatile-Media-Ruby) to your desired folder.
+Clone this [repository](https://github.com/Lucash2022/Catalog-Ruby-Group-Capstone) to your desired folder.
 
 ### Install
 
@@ -95,7 +103,7 @@ This project does not require installation.
 
 **To run the project follow the following instruction:-**
 
-- Clone this [repository](https://github.com/Lcuash2022/Versatile-Media-Ruby) in your local machine with correct branch.
+- Clone this [repository](https://github.com/Lucash2022/Catalog-Ruby-Group-Capstone) in your local machine with correct branch.
 - Run **ruby main.rb**
 
 ### Run tests
@@ -115,9 +123,17 @@ To run tests, run the following command: **rspec**.
 - LinkedIn: [Lucas Erkana](https://www.linkedin.com/in/lucas-erkana/)
 
 
-👤 **Partner 1**
+👤 **Kagheni Mbale Christian**
 
-👤 **Partner 2**
+- GitHub: [@githubhandle](https://github.com/Kaghenimbale)
+- Twitter: [@twitterhandle](https://twitter.com/MbaleKagheni)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kagheni-mbale-401b90240/)
+
+👤 **Ghulam Hyder Dar**
+
+- GitHub: [@codeWithHyder](https://github.com/codeWithHyder)
+- Twitter: [@Hyder](https://twitter.com/@hyder3512)
+- LinkedIn: [@Hyder](https://www.linkedin.com/in/ghulam-hyder-dar/)
 
 
 
@@ -127,10 +143,16 @@ To run tests, run the following command: **rspec**.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **add genre to selected book**
+- [ ] **add movies**
+- [ ] **add genre to selected movie**
+- [ ] **Remove movies**
 - [ ] **Remove a selected book**
 - [ ] **Remove a selected music album**
 - [ ] **Remove a selected game**
 
+remove a selected book
+add genre to selected book
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -163,9 +185,9 @@ I would like to thank Microverse.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Can I use this project?]**
+- **Can I use this project?**
 
-  - [It's MIT license, feel free to use as you like.]
+  - It's MIT license, feel free to use as you like.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

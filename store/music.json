@@ -1,0 +1,37 @@
+[
+  {
+    "id": 250,
+    "publish_date": "2000-01-01",
+    "on_spotify": true
+  },
+  {
+    "id": 115,
+    "publish_date": "2022-06-05",
+    "on_spotify": true
+  },
+  {
+    "id": 437,
+    "publish_date": "2023-06-01",
+    "on_spotify": true
+  },
+  {
+    "id": 973,
+    "publish_date": "2023-06-01",
+    "on_spotify": true
+  },
+  {
+    "id": 975,
+    "publish_date": "2023-06-01",
+    "on_spotify": true
+  },
+  {
+    "id": 461,
+    "publish_date": "2023-06-01",
+    "on_spotify": true
+  },
+  {
+    "id": 3,
+    "publish_date": "2022-03-09",
+    "on_spotify": true
+  }
+]
