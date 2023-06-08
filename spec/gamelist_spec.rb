@@ -1,4 +1,5 @@
 require_relative '../classes/gamelist'
+require 'rspec'
 
 describe GameList do
   it 'It should return author' do

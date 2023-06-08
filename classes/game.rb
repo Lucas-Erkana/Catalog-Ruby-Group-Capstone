@@ -14,4 +14,13 @@ class Game < Item
   def can_be_archived?
     super || Date.today > Date.iso8601(@last_played_at).next_year(2)
   end
+
+  def to_hash
+    {
+      id: @id,
+      last_played_at: @last_played_at,
+      multiplayer: @multiplayer,
+      publish_date: @publish_date
+    }
+  end
 end
